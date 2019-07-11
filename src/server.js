@@ -1,11 +1,9 @@
 /* eslint-disable no-console */
 import express from 'express';
-import morgan from 'morgan';
 import path from 'path';
 import renderPage from './blue-basket/render'
 
 const app = express();
-app.use(morgan('dev'));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
